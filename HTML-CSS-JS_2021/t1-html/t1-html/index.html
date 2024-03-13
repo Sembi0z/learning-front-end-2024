@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Первый тренировочный проект</title>
+		<meta http-equiv="Content-type" content="text/html;charset=UTF-8"/>
+	</head>
+	<body>
+		<h1>h1 - один на странице</h1>
+		<h2>Строительные тэги: header, nav, footer, div</h2>
+
+		<header>header Для верхней части сайта</header>
+		<nav>nav Организация навигации или меню</nav>
+		<footer>footer Для нижней части сайта</footer>
+		<div>div Контейнер</div>
+		<div>LoremN+TAB - для вставки рандомных слов</div>
+		<div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus repellat, voluptatum, amet similique voluptates perspiciatis.</div>
+
+		<h2>Работа с текстом: p, span, ссылки, картинки списки</h2>
+
+		<p>Абзацы Lorem ipsum dolor, sit amet consectetur adipisicing elit. A fuga laboriosam <span>porro minima veniam dolorum consectetur laborum voluptatibus. Totam, at, voluptatem.</span> Sunt officiis, quis eveniet molestiae accusamus voluptas earum officia!<br/>Перевод текста</p>
+		<span>строчный тег, он</span>
+		<span>идёт в 1 строку</span>
+		<p><a target="_blank" href="https://memepedia.ru/aboba/">target="_blank" - открытие ссылки в новом окне</a><p>
+		<img src="https://memepedia.ru/wp-content/uploads/2021/02/aboba-glad-valakas.jpg" alt="Абоба">
+		<ul>
+			<li>Содержимое</li>
+			<li>Содержимое</li>
+		</ul>
+		<ol>
+			<li>Содержимое</li>
+			<li>Содержимое</li>
+		</ol>
+
+		<h2>Формы, ввод</h2>
+		<p>method="get" - для передачи небольшого кол-ва данных, видна в адресной строке <br/> method="post" - передаёт данные скрытно, для передачи большого кол-ва данных <br/> Имена тэгов Input не должны повторяться, кроме имён блока radio</p>
+		<form action="#" method="post" enctype="multipart/form-data"></form>
+		<input placeholder="Логин" type="text" name="log" value=""/>
+		<input placeholder="Пароль" type="password" name="pass" value=""/>
+		<div>
+			<p><input checked type="radio" name="radio1" value="a"/>a</p>
+			<p><input type="radio" name="radio1" value="b"/>b</p>
+		</div>
+		<div>
+			<p><input type="radio" name="radio2" value="c"/>c</p>
+			<p><input checked type="radio" name="radio2" value="d"/>d</p>
+		</div>
+		<div>
+			<p><input type="checkbox" name="check" value="e"/>e</p>
+			<p><input checked type="checkbox" name="check2" value="f"/>f</p>
+		</div>
+		<div>
+			<p><input type="file" name="photo"/></p>
+		</div>
+		<textarea name="text1">Abobaaboabaaboba</textarea>
+
+		<div>
+			<p>Выпадающий список</p>
+			<p>multiple - выбор нескольких элементов</p>
+			<select name="Выпадающий список">
+				<option value="a">a</option>
+				<option selected value="b">b</option>
+				<option value="c">c</option>
+				<option value="d">d</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Кнопка</button>
+		</div>
+	</body>
+</html>
+
