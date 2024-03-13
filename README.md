@@ -11,7 +11,7 @@
 - **Git_CheatSheets/GitGuide.txt**: содержит информацию о командах Git и инструкции по первоначальной настройке и созданию репозитория.  
 - **Git_CheatSheets/GitTeamWork.txt**: также содержит информацию о командах Git, но преимущественно предназначенные для работы в команде, а также по работе с ветками и fork'ами.  
 - **Git_CheatSheets/TerminalGuide.txt**: хранит в себе инструкции по работе в терминале Git Bash и консоли Windows.  
-- **Git_CheatSheets/README and markdown Guide.txt**: содержит очень короткую шпаргалку по оформлению Markdown-файлов типа README.  
+- **Git_CheatSheets/README and markdown Guide.txt**: содержит шпаргалку по оформлению Markdown-файлов типа README (сделана была не мной).  
 ---
 - **HTML-CSS-JS_2021/t3-css-real proj/info.txt**: является шпаргалкой по CSS.  
 - **HTML-CSS-JS_2021/t3-css-real_proj/t3-css-real_proj**: пример простого проекта по вёрстке сайта с использованием HTML и CSS.  
