@@ -8,8 +8,7 @@
 
 - **[Темы Собеседования](Interview.md "Interview.md")**: файл, содержащий список возможных тем для подготовки к собеседованию, а также разбор каждой из них, включающий определения, обозначения, примеры, изображения, формулы, задачи и всё необходимое для быстрого изучения.  
 ---
-- **[Команды Git](Git_CheatSheets/GitGuide.txt "Git_CheatSheets/GitGuide.txt")**: содержит информацию о командах Git и инструкции по первоначальной настройке и созданию репозитория.  
-- **[Продвинутые команды Git](Git_CheatSheets/GitTeamWork.txt "Git_CheatSheets/GitTeamWork.txt")**: также содержит информацию о командах Git, но преимущественно предназначенные для работы в команде, а также по работе с ветками и fork'ами.  
+- **[Команды Git](Git_CheatSheets/GitCheatSheet.md "Git_CheatSheets/GitCheatSheet.md")**: содержит информацию о командах Git и инструкции по первоначальной настройке и созданию репозитория.  
 - **[Git Bash Шпаргалка](Git_CheatSheets/TerminalGuide.txt "Git_CheatSheets/TerminalGuide.txt")**: хранит в себе инструкции по работе в терминале Git Bash.  
 - **[Markdown Шпаргалка](Git_CheatSheets/MarkdownGuide.md "Git_CheatSheets/MarkdownGuide.md")**: содержит шпаргалку по оформлению Markdown-файлов типа README (сделана была не мной).  
 ---
