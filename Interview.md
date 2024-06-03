@@ -922,6 +922,93 @@ animals.forEach(animal => {
 Метод `makeSound` вызывается на каждом объекте в массиве, и каждый объект использует свою реализацию этого метода, демонстрируя полиморфизм.  
 
 
+## Базы данных
+
+**Введение в базы данных**
+   - Что такое база данных?
+   - Зачем нужны базы данных?
+   - Примеры использования баз данных.
+
+**Типы баз данных**
+   - Реляционные базы данных (RDBMS)
+     - Примеры: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
+   - Нереляционные базы данных (NoSQL)
+     - Документные базы данных (например, MongoDB)
+     - Графовые базы данных (например, Neo4j)
+     - Ключ-значение хранилища (например, Redis)
+     - Колоночные базы данных (например, Cassandra)
+
+**Основные концепции реляционных баз данных**
+   - Таблицы, строки и столбцы.
+   - Первичные ключи.
+   - Внешние ключи.
+   - Индексы.
+
+**Основы SQL (Structured Query Language)**
+   - Введение в SQL.
+   - DDL (Data Definition Language)
+     - CREATE TABLE.
+     - ALTER TABLE.
+     - DROP TABLE.
+   - DML (Data Manipulation Language)
+     - SELECT.
+     - INSERT.
+     - UPDATE.
+     - DELETE.
+   - DCL (Data Control Language)
+     - GRANT.
+     - REVOKE.
+
+**Простейшие SQL-запросы**
+   - SELECT: выборка данных.
+     - SELECT * FROM table_name;
+     - SELECT column1, column2 FROM table_name;
+   - WHERE: условия выборки.
+     - SELECT * FROM table_name WHERE condition;
+   - ORDER BY: сортировка.
+     - SELECT * FROM table_name ORDER BY column1 ASC/DESC;
+   - LIMIT: ограничение количества строк.
+     - SELECT * FROM table_name LIMIT number;
+
+**Работа с данными**
+   - Вставка данных.
+     - INSERT INTO table_name (column1, column2) VALUES (value1, value2);
+   - Обновление данных.
+     - UPDATE table_name SET column1 = value1 WHERE condition;
+   - Удаление данных.
+     - DELETE FROM table_name WHERE condition;
+
+**Соединение таблиц (JOIN)**
+   - INNER JOIN.
+     - SELECT columns FROM table1 INNER JOIN table2 ON table1.column = table2.column;
+   - LEFT JOIN.
+     - SELECT columns FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
+   - RIGHT JOIN.
+     - SELECT columns FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
+   - FULL OUTER JOIN.
+     - SELECT columns FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column;
+
+**Агрегатные функции и группировка**
+   - COUNT, SUM, AVG, MIN, MAX.
+     - SELECT COUNT(column) FROM table_name;
+     - SELECT SUM(column) FROM table_name;
+   - GROUP BY.
+     - SELECT column, COUNT(*) FROM table_name GROUP BY column;
+   - HAVING: фильтрация групп.
+     - SELECT column, COUNT(*) FROM table_name GROUP BY column HAVING COUNT(*) > value;
+
+**Нормализация данных**
+   - Принципы нормализации.
+   - Первая нормальная форма (1NF).
+   - Вторая нормальная форма (2NF).
+   - Третья нормальная форма (3NF).
+
+**Базовые операции администрирования базы данных**
+    - Резервное копирование и восстановление данных.
+    - Мониторинг производительности.
+    - Настройка безопасности и управление пользователями.
+
+
 ## ToDo  
 
 
