@@ -924,89 +924,183 @@ animals.forEach(animal => {
 
 ## Базы данных
 
-**Введение в базы данных**
-   - Что такое база данных?
-   - Зачем нужны базы данных?
-   - Примеры использования баз данных.
+База данных (БД) — это организованная коллекция структурированной информации или данных, обычно хранимая и доступная в электронном виде из компьютерной системы. Базы данных могут содержать множество типов данных и управляться различными системами управления базами данных (СУБД).
 
-**Типы баз данных**
-   - Реляционные базы данных (RDBMS)
-     - Примеры: MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
-   - Нереляционные базы данных (NoSQL)
-     - Документные базы данных (например, MongoDB)
-     - Графовые базы данных (например, Neo4j)
-     - Ключ-значение хранилища (например, Redis)
-     - Колоночные базы данных (например, Cassandra)
+### Виды баз данных и их различия
 
-**Основные концепции реляционных баз данных**
-   - Таблицы, строки и столбцы.
-   - Первичные ключи.
-   - Внешние ключи.
-   - Индексы.
+#### 1. Реляционные базы данных (RDBMS)
 
-**Основы SQL (Structured Query Language)**
-   - Введение в SQL.
-   - DDL (Data Definition Language)
-     - CREATE TABLE.
-     - ALTER TABLE.
-     - DROP TABLE.
-   - DML (Data Manipulation Language)
-     - SELECT.
-     - INSERT.
-     - UPDATE.
-     - DELETE.
-   - DCL (Data Control Language)
-     - GRANT.
-     - REVOKE.
+Реляционные базы данных хранят данные в таблицах, которые могут быть связаны между собой с помощью ключей. Примеры RDBMS включают MySQL, PostgreSQL, Oracle, и Microsoft SQL Server.
 
-**Простейшие SQL-запросы**
-   - SELECT: выборка данных.
-     - SELECT * FROM table_name;
-     - SELECT column1, column2 FROM table_name;
-   - WHERE: условия выборки.
-     - SELECT * FROM table_name WHERE condition;
-   - ORDER BY: сортировка.
-     - SELECT * FROM table_name ORDER BY column1 ASC/DESC;
-   - LIMIT: ограничение количества строк.
-     - SELECT * FROM table_name LIMIT number;
+- **Структура:** Таблицы с строками и столбцами.
+- **Связи:** Используют первичные и внешние ключи для установления связей между таблицами.
+- **Язык запросов:** SQL (Structured Query Language).
+- **Примеры:** MySQL, PostgreSQL, Oracle, Microsoft SQL Server.
 
-**Работа с данными**
-   - Вставка данных.
-     - INSERT INTO table_name (column1, column2) VALUES (value1, value2);
-   - Обновление данных.
-     - UPDATE table_name SET column1 = value1 WHERE condition;
-   - Удаление данных.
-     - DELETE FROM table_name WHERE condition;
+#### 2. Нереляционные базы данных (NoSQL)
 
-**Соединение таблиц (JOIN)**
-   - INNER JOIN.
-     - SELECT columns FROM table1 INNER JOIN table2 ON table1.column = table2.column;
-   - LEFT JOIN.
-     - SELECT columns FROM table1 LEFT JOIN table2 ON table1.column = table2.column;
-   - RIGHT JOIN.
-     - SELECT columns FROM table1 RIGHT JOIN table2 ON table1.column = table2.column;
-   - FULL OUTER JOIN.
-     - SELECT columns FROM table1 FULL OUTER JOIN table2 ON table1.column = table2.column;
+NoSQL базы данных предназначены для хранения и обработки больших объемов разнообразных данных. Они включают в себя несколько подкатегорий:
 
-**Агрегатные функции и группировка**
-   - COUNT, SUM, AVG, MIN, MAX.
-     - SELECT COUNT(column) FROM table_name;
-     - SELECT SUM(column) FROM table_name;
-   - GROUP BY.
-     - SELECT column, COUNT(*) FROM table_name GROUP BY column;
-   - HAVING: фильтрация групп.
-     - SELECT column, COUNT(*) FROM table_name GROUP BY column HAVING COUNT(*) > value;
+- **Документные базы данных:** Хранят данные в виде документов, обычно в формате JSON или BSON. Примеры: MongoDB, CouchDB.
+- **Колонковые базы данных:** Хранят данные в виде столбцов, что позволяет эффективно обрабатывать запросы на большие объемы данных. Примеры: Apache Cassandra, HBase.
+- **Графовые базы данных:** Используются для хранения данных, которые лучше всего представляются в виде графов. Примеры: Neo4j, Amazon Neptune.
+- **Ключ-значение:** Хранят данные как пары "ключ-значение". Примеры: Redis, DynamoDB.
 
-**Нормализация данных**
-   - Принципы нормализации.
-   - Первая нормальная форма (1NF).
-   - Вторая нормальная форма (2NF).
-   - Третья нормальная форма (3NF).
+#### 3. Базы данных в памяти (In-Memory)
 
-**Базовые операции администрирования базы данных**
-    - Резервное копирование и восстановление данных.
-    - Мониторинг производительности.
-    - Настройка безопасности и управление пользователями.
+Эти базы данных хранят данные в оперативной памяти (RAM) для быстрой обработки. Используются для приложений, требующих высокоскоростного доступа к данным. Примеры: Redis, Memcached.
+
+#### 4. Распределенные базы данных
+
+Данные хранятся на нескольких серверах, которые могут находиться в разных географических локациях. Такие базы данных обеспечивают высокую доступность и отказоустойчивость. Примеры: Google Spanner, Apache Cassandra.
+
+#### 5. Облачные базы данных
+
+Хранятся и управляются в облаке, предоставляя масштабируемость и доступность через интернет. Примеры: Amazon RDS, Google Cloud SQL, Microsoft Azure SQL Database.
+
+### Основные SQL-запросы
+
+SQL (Structured Query Language) — это язык запросов, используемый для управления и манипулирования реляционными базами данных. Вот несколько основных SQL-запросов:
+
+#### 1. SELECT
+
+Используется для извлечения данных из одной или нескольких таблиц.
+
+```sql
+SELECT column1, column2
+FROM table_name;
+```
+
+Пример:
+
+```sql
+SELECT first_name, last_name
+FROM employees;
+```
+
+#### 2. INSERT
+
+Добавляет новые строки в таблицу.
+
+```sql
+INSERT INTO table_name (column1, column2, column3)
+VALUES (value1, value2, value3);
+```
+
+Пример:
+
+```sql
+INSERT INTO employees (first_name, last_name, email)
+VALUES ('John', 'Doe', 'john.doe@example.com');
+```
+
+#### 3. UPDATE
+
+Обновляет существующие данные в таблице.
+
+```sql
+UPDATE table_name
+SET column1 = value1, column2 = value2
+WHERE condition;
+```
+
+Пример:
+
+```sql
+UPDATE employees
+SET email = 'john.doe@newemail.com'
+WHERE employee_id = 123;
+```
+
+#### 4. DELETE
+
+Удаляет строки из таблицы.
+
+```sql
+DELETE FROM table_name
+WHERE condition;
+```
+
+Пример:
+
+```sql
+DELETE FROM employees
+WHERE employee_id = 123;
+```
+
+#### 5. CREATE TABLE
+
+Создает новую таблицу в базе данных.
+
+```sql
+CREATE TABLE table_name (
+    column1 datatype,
+    column2 datatype,
+    column3 datatype,
+    ...
+);
+```
+
+Пример:
+
+```sql
+CREATE TABLE employees (
+    employee_id INT PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    email VARCHAR(100)
+);
+```
+
+#### 6. ALTER TABLE
+
+Изменяет структуру существующей таблицы.
+
+```sql
+ALTER TABLE table_name
+ADD column_name datatype;
+```
+
+Пример:
+
+```sql
+ALTER TABLE employees
+ADD hire_date DATE;
+```
+
+#### 7. DROP TABLE
+
+Удаляет таблицу из базы данных.
+
+```sql
+DROP TABLE table_name;
+```
+
+Пример:
+
+```sql
+DROP TABLE employees;
+```
+
+#### 8. JOIN
+
+Используется для объединения строк из двух или более таблиц на основе связанного столбца между ними.
+
+```sql
+SELECT columns
+FROM table1
+JOIN table2
+ON table1.column = table2.column;
+```
+
+Пример:
+
+```sql
+SELECT employees.first_name, employees.last_name, departments.department_name
+FROM employees
+JOIN departments
+ON employees.department_id = departments.department_id;
+```
 
 
 ## ToDo  
